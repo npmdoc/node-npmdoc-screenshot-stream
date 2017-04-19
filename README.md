@@ -1,9 +1,14 @@
-# api documentation for  [screenshot-stream (v4.1.0)](https://github.com/kevva/screenshot-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-screenshot-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-screenshot-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-screenshot-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-screenshot-stream)
+# npmdoc-screenshot-stream
+
+#### api documentation for  [screenshot-stream (v4.1.0)](https://github.com/kevva/screenshot-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-screenshot-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-screenshot-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-screenshot-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-screenshot-stream)
+
 #### Capture screenshot of a website and return it as a stream
 
-[![NPM](https://nodei.co/npm/screenshot-stream.png?downloads=true)](https://www.npmjs.com/package/screenshot-stream)
+[![NPM](https://nodei.co/npm/screenshot-stream.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/screenshot-stream)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-screenshot-stream_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-screenshot-stream/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Kevin Mårtensson",
-        "email": "kevinmartensson@gmail.com",
         "url": "github.com/kevva"
     },
     "bugs": {
@@ -74,21 +78,17 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "kevva",
-            "email": "kevinmartensson@gmail.com"
+            "name": "kevva"
         },
         {
-            "name": "samverschueren",
-            "email": "sam.verschueren@gmail.com"
+            "name": "samverschueren"
         },
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         }
     ],
     "name": "screenshot-stream",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kevva/screenshot-stream.git"
@@ -112,16 +112,6 @@
     }
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module screenshot-stream](#apidoc.module.screenshot-stream)
-
-
-
-# <a name="apidoc.module.screenshot-stream"></a>[module screenshot-stream](#apidoc.module.screenshot-stream)
 
 
 
