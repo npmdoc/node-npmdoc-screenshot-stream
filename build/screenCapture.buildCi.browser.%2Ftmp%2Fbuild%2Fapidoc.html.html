@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/kevva/screenshot-stream#readme"
-
-    >screenshot-stream (v4.1.0)</a>
+    <a href="https://github.com/kevva/screenshot-stream#readme">screenshot-stream (v4.1.0)</a>
 </h1>
 <h4>Capture screenshot of a website and return it as a stream</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.screenshot-stream">module screenshot-stream</a><ol>
 
@@ -85,11 +78,11 @@
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(url, size, opts) =&#x3e; {
+    <li>description and source-code<pre class="apidocCodePre">(url, size, opts) =&gt; {
 	opts = Object.assign({
 		delay: 0,
 		scale: 1,
-		format: &#x27;png&#x27;
+		format: 'png'
 	}, opts);
 
 	const args = Object.assign(opts, {
@@ -97,15 +90,15 @@
 		width: size.split(/x/i)[0] * opts.scale,
 		height: size.split(/x/i)[1] * opts.scale,
 		cookies: handleCookies(opts.cookies, url),
-		format: opts.format === &#x27;jpg&#x27; ? &#x27;jpeg&#x27; : opts.format,
-		css: /\.css$/.test(opts.css) ? fs.readFileSync(opts.css, &#x27;utf8&#x27;) : opts.css,
-		script: /\.js$/.test(opts.script) ? fs.readFileSync(opts.script, &#x27;utf8&#x27;) : opts.script
+		format: opts.format === 'jpg' ? 'jpeg' : opts.format,
+		css: /\.css$/.test(opts.css) ? fs.readFileSync(opts.css, 'utf8') : opts.css,
+		script: /\.js$/.test(opts.script) ? fs.readFileSync(opts.script, 'utf8') : opts.script
 	});
 
-	const cp = phantomBridge(path.join(__dirname, &#x27;stream.js&#x27;), [
-		&#x27;--ignore-ssl-errors=true&#x27;,
-		&#x27;--local-to-remote-url-access=true&#x27;,
-		&#x27;--ssl-protocol=any&#x27;,
+	const cp = phantomBridge(path.join(__dirname, 'stream.js'), [
+		'--ignore-ssl-errors=true',
+		'--local-to-remote-url-access=true',
+		'--ssl-protocol=any',
 		JSON.stringify(args)
 	]);
 
@@ -113,10 +106,10 @@
 
 	process.stderr.setMaxListeners(0);
 
-	cp.stderr.setEncoding(&#x27;utf8&#x27;);
+	cp.stderr.setEncoding('utf8');
 	cp.stdout.pipe(stream);
 
-	byline(cp.stderr).on(&#x27;data&#x27;, data =&#x3e; {
+	byline(cp.stderr).on('data', data =&gt; {
 		data = data.trim();
 
 		if (/ phantomjs\[/.test(data)) {
@@ -128,16 +121,16 @@
 		}
 
 		if (/^WARN: /.test(data)) {
-			stream.emit(&#x27;warning&#x27;, data.replace(/^WARN: /, &#x27;&#x27;));
-			stream.emit(&#x27;warn&#x27;, data.replace(/^WARN: /, &#x27;&#x27;)); // TODO: deprecate this event in v5
+			stream.emit('warning', data.replace(/^WARN: /, ''));
+			stream.emit('warn', data.replace(/^WARN: /, '')); // TODO: deprecate this event in v5
 			return;
 		}
 
-		if (data.length &#x3e; 0) {
+		if (data.length &gt; 0) {
 			const err = new Error(data);
 			err.noStack = true;
 			cp.stdout.unpipe(stream);
-			stream.emit(&#x27;error&#x27;, err);
+			stream.emit('error', err);
 		}
 	});
 
@@ -155,3 +148,4 @@
     ]
 </div>
 </div>
+</body></html>
