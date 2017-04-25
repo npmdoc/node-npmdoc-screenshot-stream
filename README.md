@@ -1,6 +1,6 @@
 # npmdoc-screenshot-stream
 
-#### api documentation for  [screenshot-stream (v4.1.0)](https://github.com/kevva/screenshot-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-screenshot-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-screenshot-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-screenshot-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-screenshot-stream)
+#### basic api documentation for  [screenshot-stream (v4.1.0)](https://github.com/kevva/screenshot-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-screenshot-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-screenshot-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-screenshot-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-screenshot-stream)
 
 #### Capture screenshot of a website and return it as a stream
 
@@ -109,7 +109,8 @@
                 }
             }
         ]
-    }
+    },
+    "bin": {}
 }
 ```
 
